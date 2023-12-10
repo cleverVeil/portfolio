@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 240, 240, 240;
+    --background-start-rgb: 10, 10, 10;
+    --background-end-rgb: 10, 10, 10;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.scribble {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.scribble::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 15px;
+  bottom: 5px;
+  left: 0;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 5'><path d='M0,5 C10,2 100,2 30,5 C140,3 60,4 70,5 C80,1 190,1 100,5' fill='none' stroke='%235eead4' stroke-width='1'/></svg>") repeat-x;
+}
+
+.active {
+  background-color: yellow;
+}

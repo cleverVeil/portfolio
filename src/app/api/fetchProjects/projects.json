@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Portfolio",
+        "description": "Portfolio website to showcase my achievements as a developer",
+        "image":"/images/portfolio.png",
+        "link":"",
+        "skills":["NextJS", "Javascript", "TailwindCSS", "NodeJS"],
+        "isActive": true
+    },
+    {
+        "id": 2,
+        "title": "Website Builder",
+        "description": "Website created to create simple websites with HTML/CSS and Javascript",
+        "image":"/images/websiteBuilder.png",
+        "link":"https://pixip.netlify.com/",
+        "skills":["NextJS", "Javascript", "TailwindCSS", "NodeJS"],
+        "isActive": true
+    },
+    {
+        "id": 3,
+        "title": "Portelli Fit",
+        "description": "Website for a gym trainer",
+        "image":"/images/portellifit.png",
+        "link":"https://portellifit.com",
+        "skills":["NextJS", "Javascript", "TailwindCSS", "NodeJS"],
+        "isActive": true
+    },
+    {
+        "id": 4,
+        "title": "Studiobook",
+        "description": "Website for online booking of music studio",
+        "image":"/images/studiobook.png",
+        "link":"",
+        "skills":["HTML5", "Javascript", "CSS3", "PHP"],
+        "isActive": false
+    },
+    {
+        "id": 5,
+        "title": "Exambuzz",
+        "description": "Website created for college students to give mock aptitude exams",
+        "image":"/images/exambuzz.png",
+        "link": "",
+        "skills":["Vue2", "Javascript", "Bootstrap", "NodeJS", "MySQL", "MongoDB"],
+        "isActive": false
+    },
+    {
+        "id": 6,
+        "title": "Care247",
+        "description": "Website created for health care vendor",
+        "image":"/images/portellifit.png",
+        "link":"",
+        "skills":["React", "Javascript", "Bootstrap"],
+        "isActive": false
+    },
+    {
+        "id": 7,
+        "title": "E-Commerce Store",
+        "description": "Website created for sweets and dry fruits vendor",
+        "image":"/images/ecommerce.png",
+        "link":"",
+        "skills":["React", "Javascript", "Bootstrap", "NodeJS", "MySQL", "MongoDB"],
+        "isActive": false
+    }
+]
