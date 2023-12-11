@@ -34,22 +34,26 @@ const Project = () => {
                     {
                         data?.map((project) => (
                             <Link key={project.id} href={project.link ?? '#'} target='_blank' rel='noreferrer noopener'>
-                                <li className="group mb-12">
-                                    <div className='cursor-pointer relative flex pb-1 items-start transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-100'>
+                                <li className="group mb-12 border border-gray-500 rounded-md md:border-none">
+                                    <div className='cursor-pointer relative md:flex pb-1 items-start transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-100'>
                                         <Image
                                             src={project.image}
                                             height={150}
                                             width={150}
-                                            className='border border-gray-600 rounded-md m-3'
+                                            className='border w-full md:w-auto border-gray-600 rounded-md p-1'
                                             alt={project.title}
                                         />
                                         <div className='mx-2'>
                                             <div className='absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-[#031932]/20 lg:group-hover:drop-shadow-lg lg:group-hover:border-[0.5px] lg:group-hover:border-gray-500'></div>
                                             <div className='z-10 mt-2 flex justify-between items-center align-center'>
-                                                <h4 className='text-lg font-medium tracking-tight text-slate-200 sm:text-xl'> 
+                                                <h4 className='text-lg flex font-medium tracking-tight text-slate-200 sm:text-xl'> 
                                                 {project.title} 
                                                 {
-                                                        <span title={project.isActive ? "Active" : "Inactive"} className={`absolute right-0 bottom-0 w-3 h-3 items-center rounded-full ${project.isActive ? "bg-teal-300" : "bg-red-300"}`}></span>
+                                                        <span 
+                                                        title={project.isActive ? "Active" : "Inactive"}
+                                                        className='flex items-end mx-2 rounded-full bg-none px-3 py-0.5 text-xs font-medium leading-5 text-teal-300'>
+                                                            {project.isActive ? "Active" : "Prototype"}
+                                                        </span>
                                                 }
                                                 </h4>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>

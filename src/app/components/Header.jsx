@@ -36,7 +36,6 @@ const Header = () => {
             anchorTags.forEach((link, index) => {
                 const section = document.querySelector(link.getAttribute('href'));
                 const nextSection = anchorTags[index + 1] ? document.querySelector(anchorTags[index + 1].getAttribute('href')) : document.querySelector(anchorTags[anchorTags.length-1].getAttribute('href'));
-                console.log('nextSection.offsetTop-> ',nextSection.offsetTop, 'fromTop-> ', fromTop, 'nextSection.offsetTop > (fromTop + 100)-> ', nextSection.offsetTop > (fromTop + 100))
                 if (section.offsetTop <= (fromTop + 100) && nextSection.offsetTop > (fromTop)) {
                     // Add 'active' class to the corresponding anchor tag
                     //console.log('section-> ', section.id, 'nextSection-> ', nextSection.id)
